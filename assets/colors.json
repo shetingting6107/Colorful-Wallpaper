@@ -1,0 +1,656 @@
+{
+  "meta": {
+    "name": "Han Colors - Traditional Chinese Color Library",
+    "version": "1.0.0",
+    "count": 60,
+    "locales": [
+      "zh-CN",
+      "en"
+    ],
+    "hexNote": "All hex values are hand-tuned approximations for screen display (sRGB), not copied from any published color book."
+  },
+  "families": [
+    {
+      "id": "red",
+      "zh": "红系",
+      "en": "Red"
+    },
+    {
+      "id": "ochre",
+      "zh": "橙赭系",
+      "en": "Ochre"
+    },
+    {
+      "id": "yellow",
+      "zh": "黄系",
+      "en": "Yellow"
+    },
+    {
+      "id": "green",
+      "zh": "绿系",
+      "en": "Green"
+    },
+    {
+      "id": "blue",
+      "zh": "青蓝系",
+      "en": "Blue"
+    },
+    {
+      "id": "purple",
+      "zh": "紫系",
+      "en": "Purple"
+    },
+    {
+      "id": "neutral",
+      "zh": "白灰黑系",
+      "en": "Neutral"
+    },
+    {
+      "id": "earth",
+      "zh": "褐土系",
+      "en": "Earth"
+    }
+  ],
+  "colors": [
+    {
+      "id": "zhusha",
+      "family": "red",
+      "nameZh": "朱砂",
+      "pinyin": "zhū shā",
+      "nameEn": "Cinnabar",
+      "hex": "#E63E21",
+      "noteEn": "Mineral red ground from cinnabar ore, the color of seals and lacquerware.",
+      "noteZh": "矿物颜料，印章与漆器之红。"
+    },
+    {
+      "id": "yanzhi",
+      "family": "red",
+      "nameZh": "胭脂",
+      "pinyin": "yān zhi",
+      "nameEn": "Rouge Red",
+      "hex": "#9D2933",
+      "noteEn": "Deep red of traditional rouge made from safflower petals.",
+      "noteZh": "红花制成的妆粉，深而柔的红。"
+    },
+    {
+      "id": "qianse",
+      "family": "red",
+      "nameZh": "茜色",
+      "pinyin": "qiàn sè",
+      "nameEn": "Madder",
+      "hex": "#B03A2E",
+      "noteEn": "Warm plant red dyed from madder root.",
+      "noteZh": "茜草根染出的暖红。"
+    },
+    {
+      "id": "jianghong",
+      "family": "red",
+      "nameZh": "绛红",
+      "pinyin": "jiàng hóng",
+      "nameEn": "Deep Crimson",
+      "hex": "#8C2F39",
+      "noteEn": "Solemn crimson once worn in ceremonial robes.",
+      "noteZh": "礼服常用的大红，沉稳庄重。"
+    },
+    {
+      "id": "feihong",
+      "family": "red",
+      "nameZh": "绯红",
+      "pinyin": "fēi hóng",
+      "nameEn": "Scarlet",
+      "hex": "#C83C23",
+      "noteEn": "Bright scarlet of Tang-dynasty officials' dress.",
+      "noteZh": "唐代官服之色，鲜亮夺目。"
+    },
+    {
+      "id": "haitanghong",
+      "family": "red",
+      "nameZh": "海棠红",
+      "pinyin": "hǎi táng hóng",
+      "nameEn": "Crabapple Red",
+      "hex": "#DB5A6B",
+      "noteEn": "Soft blossom red of flowering crabapple.",
+      "noteZh": "春日海棠花的柔红。"
+    },
+    {
+      "id": "shiliuhong",
+      "family": "red",
+      "nameZh": "石榴红",
+      "pinyin": "shí liu hóng",
+      "nameEn": "Pomegranate Red",
+      "hex": "#EE2E16",
+      "noteEn": "Vivid, festive red of pomegranate blossom.",
+      "noteZh": "石榴花开，热烈喜庆。"
+    },
+    {
+      "id": "taohong",
+      "family": "red",
+      "nameZh": "桃红",
+      "pinyin": "táo hóng",
+      "nameEn": "Peach Pink",
+      "hex": "#F47983",
+      "noteEn": "Tender pink of newly opened peach blossom.",
+      "noteZh": "桃花初绽的嫩粉。"
+    },
+    {
+      "id": "feise",
+      "family": "red",
+      "nameZh": "妃色",
+      "pinyin": "fēi sè",
+      "nameEn": "Consort Pink",
+      "hex": "#ED5736",
+      "noteEn": "Warm pink-red once favored in court dress.",
+      "noteZh": "古时常用于妃嫔服饰的暖红。"
+    },
+    {
+      "id": "huohong",
+      "family": "red",
+      "nameZh": "火红",
+      "pinyin": "huǒ hóng",
+      "nameEn": "Flame Red",
+      "hex": "#EA2E2E",
+      "noteEn": "Hot, glowing red of an open flame.",
+      "noteZh": "如火焰般炽热的红。"
+    },
+    {
+      "id": "zaohong",
+      "family": "red",
+      "nameZh": "枣红",
+      "pinyin": "zǎo hóng",
+      "nameEn": "Jujube Red",
+      "hex": "#7C1823",
+      "noteEn": "Deep, mellow red of ripe jujube dates.",
+      "noteZh": "红枣成熟后的深沉红。"
+    },
+    {
+      "id": "yinhong",
+      "family": "red",
+      "nameZh": "银红",
+      "pinyin": "yín hóng",
+      "nameEn": "Silver Red",
+      "hex": "#F05654",
+      "noteEn": "Light red brightened with a silvery sheen.",
+      "noteZh": "掺了银粉的浅红，带光泽。"
+    },
+    {
+      "id": "zheshi",
+      "family": "ochre",
+      "nameZh": "赭石",
+      "pinyin": "zhě shí",
+      "nameEn": "Red Ochre",
+      "hex": "#9E4A2E",
+      "noteEn": "Iron-oxide earth pigment, among the oldest painting colors.",
+      "noteZh": "最古老的土色颜料之一。"
+    },
+    {
+      "id": "juhong",
+      "family": "ochre",
+      "nameZh": "橘红",
+      "pinyin": "jú hóng",
+      "nameEn": "Tangerine",
+      "hex": "#FF7500",
+      "noteEn": "Bright orange of ripe tangerine peel.",
+      "noteZh": "橘皮般的亮橙红。"
+    },
+    {
+      "id": "chenghuang",
+      "family": "ochre",
+      "nameZh": "橙黄",
+      "pinyin": "chéng huáng",
+      "nameEn": "Orange Gold",
+      "hex": "#FFA400",
+      "noteEn": "Warm orange resting between yellow and red.",
+      "noteZh": "介于黄与橙之间的暖色。"
+    },
+    {
+      "id": "hupo",
+      "family": "ochre",
+      "nameZh": "琥珀",
+      "pinyin": "hǔ pò",
+      "nameEn": "Amber",
+      "hex": "#CA6924",
+      "noteEn": "Translucent golden brown of fossilized resin.",
+      "noteZh": "树脂化石的通透金棕。"
+    },
+    {
+      "id": "chase",
+      "family": "ochre",
+      "nameZh": "茶色",
+      "pinyin": "chá sè",
+      "nameEn": "Tea Brown",
+      "hex": "#A97844",
+      "noteEn": "Warm brown of a strong cup of steeped tea.",
+      "noteZh": "浓茶一般的暖棕。"
+    },
+    {
+      "id": "minghuang",
+      "family": "yellow",
+      "nameZh": "明黄",
+      "pinyin": "míng huáng",
+      "nameEn": "Imperial Yellow",
+      "hex": "#FFC90E",
+      "noteEn": "Brilliant yellow once reserved for the emperor.",
+      "noteZh": "帝王专用的亮黄。"
+    },
+    {
+      "id": "ehuang",
+      "family": "yellow",
+      "nameZh": "鹅黄",
+      "pinyin": "é huáng",
+      "nameEn": "Gosling Yellow",
+      "hex": "#FFF143",
+      "noteEn": "Soft light yellow of a gosling's down.",
+      "noteZh": "雏鹅绒毛般的嫩黄。"
+    },
+    {
+      "id": "xinghuang",
+      "family": "yellow",
+      "nameZh": "杏黄",
+      "pinyin": "xìng huáng",
+      "nameEn": "Apricot Yellow",
+      "hex": "#FFA631",
+      "noteEn": "Mellow yellow of ripening apricots.",
+      "noteZh": "杏子成熟时的暖黄。"
+    },
+    {
+      "id": "jianghuang",
+      "family": "yellow",
+      "nameZh": "姜黄",
+      "pinyin": "jiāng huáng",
+      "nameEn": "Ginger Yellow",
+      "hex": "#FFC773",
+      "noteEn": "Warm yellow of fresh ginger root.",
+      "noteZh": "生姜根茎的温黄色。"
+    },
+    {
+      "id": "tenghuang",
+      "family": "yellow",
+      "nameZh": "藤黄",
+      "pinyin": "téng huáng",
+      "nameEn": "Gamboge",
+      "hex": "#FFB61E",
+      "noteEn": "Classic resin yellow of traditional ink painting.",
+      "noteZh": "传统国画常用的树脂黄。"
+    },
+    {
+      "id": "qiuxiangse",
+      "family": "yellow",
+      "nameZh": "秋香色",
+      "pinyin": "qiū xiāng sè",
+      "nameEn": "Autumn Fragrance",
+      "hex": "#D9B611",
+      "noteEn": "Muted gold-green of leaves in early autumn.",
+      "noteZh": "初秋树叶的黄绿之间。"
+    },
+    {
+      "id": "xiangse",
+      "family": "yellow",
+      "nameZh": "缃色",
+      "pinyin": "xiāng sè",
+      "nameEn": "Silk Yellow",
+      "hex": "#F0C239",
+      "noteEn": "Pale yellow of fine silk gauze.",
+      "noteZh": "浅黄色丝帛之色。"
+    },
+    {
+      "id": "xionghuang",
+      "family": "yellow",
+      "nameZh": "雄黄",
+      "pinyin": "xióng huáng",
+      "nameEn": "Realgar",
+      "hex": "#E98B2A",
+      "noteEn": "Orange-yellow of the mineral realgar.",
+      "noteZh": "矿物雄黄的橙黄色。"
+    },
+    {
+      "id": "songhualv",
+      "family": "green",
+      "nameZh": "松花绿",
+      "pinyin": "sōng huā lǜ",
+      "nameEn": "Pine Green",
+      "hex": "#057748",
+      "noteEn": "Deep green touched with pine-pollen warmth.",
+      "noteZh": "松花粉般的深绿。"
+    },
+    {
+      "id": "zhuqing",
+      "family": "green",
+      "nameZh": "竹青",
+      "pinyin": "zhú qīng",
+      "nameEn": "Bamboo Green",
+      "hex": "#789262",
+      "noteEn": "Greyish green of bamboo skin.",
+      "noteZh": "竹皮外层的灰绿。"
+    },
+    {
+      "id": "liulv",
+      "family": "green",
+      "nameZh": "柳绿",
+      "pinyin": "liǔ lǜ",
+      "nameEn": "Willow Green",
+      "hex": "#AFDD22",
+      "noteEn": "Fresh yellow-green of new willow leaves.",
+      "noteZh": "新柳嫩芽的黄绿。"
+    },
+    {
+      "id": "doulv",
+      "family": "green",
+      "nameZh": "豆绿",
+      "pinyin": "dòu lǜ",
+      "nameEn": "Pea Green",
+      "hex": "#9ED048",
+      "noteEn": "Soft green of young pea pods.",
+      "noteZh": "青豆荚的柔绿。"
+    },
+    {
+      "id": "ailv",
+      "family": "green",
+      "nameZh": "艾绿",
+      "pinyin": "ài lǜ",
+      "nameEn": "Mugwort Green",
+      "hex": "#92A878",
+      "noteEn": "Dusty, quiet green of mugwort leaves.",
+      "noteZh": "艾叶的灰调绿。"
+    },
+    {
+      "id": "shilv",
+      "family": "green",
+      "nameZh": "石绿",
+      "pinyin": "shí lǜ",
+      "nameEn": "Malachite Green",
+      "hex": "#16A951",
+      "noteEn": "Mineral green ground from malachite, layered in murals.",
+      "noteZh": "孔雀石研磨的矿物绿。"
+    },
+    {
+      "id": "bise",
+      "family": "green",
+      "nameZh": "碧色",
+      "pinyin": "bì sè",
+      "nameEn": "Jade Green",
+      "hex": "#2EDFA3",
+      "noteEn": "Clear, translucent green of fine jade.",
+      "noteZh": "美玉般清透的绿。"
+    },
+    {
+      "id": "conglv",
+      "family": "green",
+      "nameZh": "葱绿",
+      "pinyin": "cōng lǜ",
+      "nameEn": "Scallion Green",
+      "hex": "#40DE5A",
+      "noteEn": "Vivid green of fresh scallions.",
+      "noteZh": "青葱般鲜亮的绿。"
+    },
+    {
+      "id": "youlv",
+      "family": "green",
+      "nameZh": "油绿",
+      "pinyin": "yóu lǜ",
+      "nameEn": "Glossy Green",
+      "hex": "#00BC12",
+      "noteEn": "Deep, lustrous green like oil on leaves.",
+      "noteZh": "叶面油光般的深绿。"
+    },
+    {
+      "id": "tianqing",
+      "family": "blue",
+      "nameZh": "天青",
+      "pinyin": "tiān qīng",
+      "nameEn": "Sky After Rain",
+      "hex": "#9EC7C9",
+      "noteEn": "The fabled Ru-ware glaze: the sky's blue after rain clears.",
+      "noteZh": "雨过天青云破处的汝窑色。"
+    },
+    {
+      "id": "yuebai",
+      "family": "blue",
+      "nameZh": "月白",
+      "pinyin": "yuè bái",
+      "nameEn": "Moonlight White",
+      "hex": "#D6ECF0",
+      "noteEn": "Pale blue-white of silk under moonlight.",
+      "noteZh": "月下素绢的淡蓝白。"
+    },
+    {
+      "id": "daise",
+      "family": "blue",
+      "nameZh": "黛色",
+      "pinyin": "dài sè",
+      "nameEn": "Eyebrow Indigo",
+      "hex": "#4A4E69",
+      "noteEn": "Deep blue-black once used to paint eyebrows.",
+      "noteZh": "古时画眉的青黑色。"
+    },
+    {
+      "id": "dianqing",
+      "family": "blue",
+      "nameZh": "靛青",
+      "pinyin": "diàn qīng",
+      "nameEn": "Indigo",
+      "hex": "#177CB0",
+      "noteEn": "Plant indigo of traditional blue-dyed cloth.",
+      "noteZh": "蓝草染布的靛蓝。"
+    },
+    {
+      "id": "qunqing",
+      "family": "blue",
+      "nameZh": "群青",
+      "pinyin": "qún qīng",
+      "nameEn": "Ultramarine Ash",
+      "hex": "#4C8DAE",
+      "noteEn": "Mineral blue of blue-and-green landscape painting.",
+      "noteZh": "青绿山水常用的矿蓝。"
+    },
+    {
+      "id": "baolan",
+      "family": "blue",
+      "nameZh": "宝蓝",
+      "pinyin": "bǎo lán",
+      "nameEn": "Sapphire Blue",
+      "hex": "#4B5CC4",
+      "noteEn": "Brilliant jewel blue of sapphires.",
+      "noteZh": "蓝宝石般的亮蓝。"
+    },
+    {
+      "id": "zangqing",
+      "family": "blue",
+      "nameZh": "藏青",
+      "pinyin": "zàng qīng",
+      "nameEn": "Deep Navy",
+      "hex": "#2E4E7E",
+      "noteEn": "Deep, steady navy used in robes and workwear.",
+      "noteZh": "深邃沉稳的藏蓝。"
+    },
+    {
+      "id": "shiqing",
+      "family": "blue",
+      "nameZh": "石青",
+      "pinyin": "shí qīng",
+      "nameEn": "Azurite Blue",
+      "hex": "#1685A9",
+      "noteEn": "Mineral blue ground from azurite, paired with malachite.",
+      "noteZh": "蓝铜矿研磨的矿物蓝。"
+    },
+    {
+      "id": "hulan",
+      "family": "blue",
+      "nameZh": "湖蓝",
+      "pinyin": "hú lán",
+      "nameEn": "Lake Blue",
+      "hex": "#2CB5C9",
+      "noteEn": "Clear, bright blue of calm lake water.",
+      "noteZh": "湖水般明净的蓝。"
+    },
+    {
+      "id": "jilan",
+      "family": "blue",
+      "nameZh": "霁蓝",
+      "pinyin": "jì lán",
+      "nameEn": "Clearing-Sky Blue",
+      "hex": "#2C4A7C",
+      "noteEn": "Deep sacrificial blue of Ming-dynasty porcelain.",
+      "noteZh": "明代霁蓝釉瓷的深蓝。"
+    },
+    {
+      "id": "zitan",
+      "family": "purple",
+      "nameZh": "紫檀",
+      "pinyin": "zǐ tán",
+      "nameEn": "Rosewood",
+      "hex": "#4C221B",
+      "noteEn": "Dark purple-brown of precious rosewood.",
+      "noteZh": "紫檀木的紫褐。"
+    },
+    {
+      "id": "ouhese",
+      "family": "purple",
+      "nameZh": "藕荷色",
+      "pinyin": "ǒu hé sè",
+      "nameEn": "Lotus-Root Mauve",
+      "hex": "#E4C6D0",
+      "noteEn": "Pale mauve-pink of fresh lotus root.",
+      "noteZh": "莲藕般的浅紫粉。"
+    },
+    {
+      "id": "dingxiangse",
+      "family": "purple",
+      "nameZh": "丁香色",
+      "pinyin": "dīng xiāng sè",
+      "nameEn": "Lilac",
+      "hex": "#CCA4E3",
+      "noteEn": "Light purple of lilac blossom.",
+      "noteZh": "丁香花的淡紫。"
+    },
+    {
+      "id": "qinglian",
+      "family": "purple",
+      "nameZh": "青莲",
+      "pinyin": "qīng lián",
+      "nameEn": "Blue Lotus",
+      "hex": "#8B66A9",
+      "noteEn": "Blue-purple of the lotus in Buddhist art.",
+      "noteZh": "佛教青莲花的蓝紫。"
+    },
+    {
+      "id": "ziteng",
+      "family": "purple",
+      "nameZh": "紫藤",
+      "pinyin": "zǐ téng",
+      "nameEn": "Wisteria",
+      "hex": "#8A79AF",
+      "noteEn": "Soft purple of hanging wisteria flowers.",
+      "noteZh": "紫藤花垂落的柔紫。"
+    },
+    {
+      "id": "xueqing",
+      "family": "purple",
+      "nameZh": "雪青",
+      "pinyin": "xuě qīng",
+      "nameEn": "Snow Violet",
+      "hex": "#B0A4E3",
+      "noteEn": "Cool violet, like snow under evening light.",
+      "noteZh": "雪光映出的冷紫。"
+    },
+    {
+      "id": "xiangyabai",
+      "family": "neutral",
+      "nameZh": "象牙白",
+      "pinyin": "xiàng yá bái",
+      "nameEn": "Ivory",
+      "hex": "#FFFBF0",
+      "noteEn": "Warm, creamy white of ivory.",
+      "noteZh": "象牙温润的乳白。"
+    },
+    {
+      "id": "mibai",
+      "family": "neutral",
+      "nameZh": "米白",
+      "pinyin": "mǐ bái",
+      "nameEn": "Rice White",
+      "hex": "#F5F1E8",
+      "noteEn": "Gentle off-white of polished rice.",
+      "noteZh": "新米般的柔白。"
+    },
+    {
+      "id": "shuangse",
+      "family": "neutral",
+      "nameZh": "霜色",
+      "pinyin": "shuāng sè",
+      "nameEn": "Frost White",
+      "hex": "#E9F1F6",
+      "noteEn": "Cold white-grey of morning frost.",
+      "noteZh": "晨霜覆地的冷白。"
+    },
+    {
+      "id": "qianhui",
+      "family": "neutral",
+      "nameZh": "铅灰",
+      "pinyin": "qiān huī",
+      "nameEn": "Lead Grey",
+      "hex": "#7B7F87",
+      "noteEn": "Cool, steady grey of lead.",
+      "noteZh": "铅灰色的沉静。"
+    },
+    {
+      "id": "canghui",
+      "family": "neutral",
+      "nameZh": "苍灰",
+      "pinyin": "cāng huī",
+      "nameEn": "Ash Grey",
+      "hex": "#91989F",
+      "noteEn": "Pale, weathered grey of stone and cloud.",
+      "noteZh": "苍天之下的浅灰。"
+    },
+    {
+      "id": "xuanse",
+      "family": "neutral",
+      "nameZh": "玄色",
+      "pinyin": "xuán sè",
+      "nameEn": "Profound Black",
+      "hex": "#2A2626",
+      "noteEn": "Near-black with hidden depth, revered as the color of heaven.",
+      "noteZh": "古人敬天的黑中带赤。"
+    },
+    {
+      "id": "zaose",
+      "family": "neutral",
+      "nameZh": "皂色",
+      "pinyin": "zào sè",
+      "nameEn": "Soapnut Black",
+      "hex": "#1A1D29",
+      "noteEn": "Deep black of traditional soapnut dye.",
+      "noteZh": "皂荚染成的深黑。"
+    },
+    {
+      "id": "chahe",
+      "family": "earth",
+      "nameZh": "茶褐",
+      "pinyin": "chá hè",
+      "nameEn": "Tea Umber",
+      "hex": "#704E35",
+      "noteEn": "Dark tea-brown of well-aged utensils.",
+      "noteZh": "陈茶般的深褐。"
+    },
+    {
+      "id": "tuose",
+      "family": "earth",
+      "nameZh": "驼色",
+      "pinyin": "tuó sè",
+      "nameEn": "Camel",
+      "hex": "#A88462",
+      "noteEn": "Warm tan of camel-hair cloth.",
+      "noteZh": "驼毛织物的暖棕。"
+    },
+    {
+      "id": "lise",
+      "family": "earth",
+      "nameZh": "栗色",
+      "pinyin": "lì sè",
+      "nameEn": "Chestnut",
+      "hex": "#5C2E23",
+      "noteEn": "Rich brown-red of chestnut shells.",
+      "noteZh": "栗子壳的深棕红。"
+    }
+  ]
+}
