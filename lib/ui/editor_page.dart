@@ -1,6 +1,7 @@
 import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
+import 'package:han_colors/ui/fullPreview_page.dart';
 
 import '../engine/wallpaper_engine.dart';
 import '../engine/wallpaper_painter.dart';
@@ -73,6 +74,13 @@ class _EditorPageState extends State<EditorPage> {
           break;
       }
     });
+    _pageCtrl.animateToPage(0,
+        duration: const Duration(milliseconds: 200),
+        curve: Curves.easeOut,
+    );
+    setState(() {
+      _pageIndex = 0;
+    });
   }
 
   bool get _usesIntensity =>
@@ -128,25 +136,39 @@ class _EditorPageState extends State<EditorPage> {
   // ---------------------------------------------------------------- preview
 
   Widget _preview() {
-    return Center(
-      child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 10),
-        child: AspectRatio(
-          aspectRatio: WallpaperEngine.aspect,
-          child: Container(
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(18),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.black.withOpacity(0.18),
-                  blurRadius: 24,
-                  offset: const Offset(0, 10),
-                ),
-              ],
-            ),
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(18),
-              child: CustomPaint(painter: WallpaperPainter(spec, repo)),
+    return GestureDetector(
+      onTap: () {
+        //点击跳至全屏预览
+        Navigator.push(
+          context,
+            PageRouteBuilder(
+                pageBuilder: (_, __, ___) => FullPreviewPage(spec: spec, repo: repo),
+              transitionDuration: const Duration(milliseconds: 200),
+              transitionsBuilder: (ctx, anim, _, child) {
+                  return FadeTransition(opacity: anim, child: child);
+              }
+            ));
+      },
+      child: Center(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 10),
+          child: AspectRatio(
+            aspectRatio: WallpaperEngine.aspect,
+            child: Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(18),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.18),
+                    blurRadius: 24,
+                    offset: const Offset(0, 10),
+                  ),
+                ],
+              ),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(18),
+                child: CustomPaint(painter: WallpaperPainter(spec, repo)),
+              ),
             ),
           ),
         ),
@@ -207,23 +229,35 @@ class _EditorPageState extends State<EditorPage> {
 
   // --------------------------------------------------------------- controls
 
+  bool get _hasSchemeTab {
+    final schemes = kTemplateSchemes[spec.template] ?? const[];
+    return schemes.length > 1;
+  }
+
+  List<({String label, Widget page})> _buildTabPages() {
+    final List<({String label, Widget page})> tabPage = [];
+    if(_hasSchemeTab) {
+      tabPage.add((label: '样式', page: _schemePage()));
+    }
+    tabPage.add((label: '排列', page: _arrangePage()));
+    tabPage.add((label: '颜色', page: _colorPage()));
+    return tabPage;
+  }
+
   Widget _controls() {
+    final List<({String label, Widget page})> tabPage = _buildTabPages();
     return Padding(
       padding: const EdgeInsets.fromLTRB(20, 4, 20, 0),
       child: Column(
         children: [
-          _controlTabs(),
+          _controlTabs(tabPage: tabPage),
           const SizedBox(height: 6),
           SizedBox(
             height: 160,
             child: PageView(
               controller: _pageCtrl,
               onPageChanged: (i) => setState(() => _pageIndex = i),
-              children: [
-                _schemePage(),
-                _arrangePage(),
-                _colorPage(),
-              ],
+              children: tabPage.map((e) => e.page).toList(),
             ),
           ),
         ],
@@ -232,11 +266,10 @@ class _EditorPageState extends State<EditorPage> {
   }
 
   /// 分页页签：方案 / 排列 / 颜色，选中时深色高亮，点击切换分页。
-  Widget _controlTabs() {
-    const labels = ['样式', '排列', '颜色'];
+  Widget _controlTabs({required List<({String label, Widget page})> tabPage}) {
     return Row(
       children: [
-        for (int i = 0; i < labels.length; i++) ...[
+        for (int i = 0; i < tabPage.length; i++) ...[
           if (i > 0) const SizedBox(width: 8),
           Expanded(
             child: GestureDetector(
@@ -259,7 +292,7 @@ class _EditorPageState extends State<EditorPage> {
                   ),
                 ),
                 child: Text(
-                  labels[i],
+                  tabPage[i].label,
                   style: TextStyle(
                     fontSize: 13,
                     fontWeight: FontWeight.w600,
